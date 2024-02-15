@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        // Scanner 객체를 사용하여 사용자로부터 입력 받기
+        Scanner scanner = new Scanner(System.in);
+
+        // 첫 번째 정수 입력 받기
+        System.out.print("첫 번째 정수를 입력하세요: ");
+        int num1 = scanner.nextInt();
+
+        // 두 번째 정수 입력 받기
+        System.out.print("두 번째 정수를 입력하세요: ");
+        int num2 = scanner.nextInt();
+
+        // 입력 받은 두 정수를 더하기
+        int sum = num1 + num2;
+
+        // 결과 출력
+        System.out.println("두 정수의 합: " + sum);
+
+        // Scanner 닫기 (권장사항)
+        scanner.close();
+    }
+}
