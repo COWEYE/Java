@@ -1,0 +1,31 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a JFrame (window)
+        JFrame frame = new JFrame("Simple UI Example");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Create a JButton
+        JButton button = new JButton("Click me!");
+
+        // Add an ActionListener to the button
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // This code will be executed when the button is clicked
+                System.out.println("Button clicked!");
+            }
+        });
+
+        // Add the button to the JFrame
+        frame.getContentPane().add(button);
+
+        // Set the JFrame to be visible
+        frame.setVisible(true);
+    }
+}
